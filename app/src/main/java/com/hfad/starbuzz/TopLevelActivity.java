@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+//main activity
 public class TopLevelActivity extends Activity {
 
     @Override
