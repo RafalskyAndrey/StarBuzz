@@ -1,31 +1,29 @@
 package com.hfad.starbuzz;
 
-import java.io.Serializable;
+import java.util.ArrayList;
 
-public class Drink implements Serializable{
-    private String name;
-    private String description;
-    private int imageResourceId;
+public class Drink extends Product{
+    private boolean hasAlcohol;
+    private boolean isHot;
+    private ArrayList<String> supplements;
 
-    public Drink(String name, String description, int imageResourceId) {
-        this.name = name;
-        this.description = description;
-        this.imageResourceId = imageResourceId;
+    public Drink(String name, String description, int imageResourceId, boolean hasAlcohol,
+                 boolean isHot, ArrayList<String> supplements) {
+        super(name, description, imageResourceId);
+        this.hasAlcohol = hasAlcohol;
+        this.isHot = isHot;
+        this.supplements = supplements;
     }
 
-    public String getName() {
-        return name;
+    public boolean HasAlcohol() {
+        return hasAlcohol;
     }
 
-    public String getDescription() {
-        return description;
+    public boolean isHot() {
+        return isHot;
     }
 
-    public int getImageResourceId() {
-        return imageResourceId;
-    }
-
-    public String toString(){
-        return this.name;
+    public ArrayList<String> getSupplements() {
+        return supplements;
     }
 }

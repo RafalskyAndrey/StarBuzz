@@ -8,15 +8,19 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class DrinkCategoryActivity extends Activity {
 
     private static final Drink[] drinks = {
             new Drink("Latte", "A couple of espresso shots with steamed milk",
-                    R.drawable.latte),
+                    R.drawable.latte, false, true, new ArrayList<>(Arrays.asList("Milk", "Sugar"))),
             new Drink("Cappuccino", "Espresso, hot milk, and a steamed milk foam",
-                    R.drawable.cappuccino),
+                    R.drawable.cappuccino, true, false, new ArrayList<>(Arrays.asList("Sugar", "Chocolate"))),
             new Drink("Filter", "Highest quality beans roasted and brewed fresh",
-                    R.drawable.filter)
+                    R.drawable.filter, false, true, new ArrayList<>(Arrays.asList("Milk", "Ice Cream")))
     };
 
     @Override

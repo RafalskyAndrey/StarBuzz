@@ -2,6 +2,9 @@
     <string name="app_name">StarBuzz</string>
     <string name="starbuzz_logo">Starbuzz logo</string>
     <string name="drink_photo">Photo of drink</string>
+    <string name="drink_alcohol">does drink has alcohol?</string>
+    <string name="cold_or_hot">cold or hot drink</string>
+    <string name="addition_to_drink">addition to drink</string>
     <string-array name="options">
         <item>Drinks</item>
         <item>Food</item>
