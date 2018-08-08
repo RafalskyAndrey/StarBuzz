@@ -18,10 +18,9 @@ public class TopLevelActivity extends Activity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 0){
-                    Intent intent = new Intent(TopLevelActivity.this, DrinkCategoryActivity.class);
+                    Intent intent = new Intent(TopLevelActivity.this, CategoryActivity.class);
+                    intent.putExtra(CategoryActivity.EXTRA_CATEGORY, i);
                     startActivity(intent);
-                }
             }
         });
     }

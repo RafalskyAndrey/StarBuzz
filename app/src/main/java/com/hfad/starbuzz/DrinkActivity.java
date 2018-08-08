@@ -12,14 +12,12 @@ import java.util.ArrayList;
 
 public class DrinkActivity extends Activity {
 
-    public static final String EXTRA_DRINK = "drink";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drink);
 
-        Drink selectedDrink = (Drink) getIntent().getSerializableExtra(EXTRA_DRINK);
+        Drink selectedDrink = (Drink) getIntent().getSerializableExtra(CategoryActivity.EXTRA_PRODUCT);
 
         ImageView drinkImage = findViewById(R.id.photo);
         TextView drinkName = findViewById(R.id.name);
